@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  direction: ltr;
+}
+.header-btn:hover{
+background-color: rgb(164, 185, 244);
+border-radius: 20%;
+color: blue;
+transition: 0.3s ease-in-out;
+}
+
+.form-Ara:focus{
+outline: none;
+}
+
+.form-Ara{
+  border: 1px solid #bbbbbb;
+}
+
+
+.form-Ara:hover{
+  border: 1px solid #2c5cf9;
+  transition: 0.5s ease-in-out;
+}
+
+.decoration-table:hover{
+text-decoration: none;
+transition: 0.4s ease-in-out;
+}
+
+
+
+.rotate-year{
+  rotate: -90deg;
+
+}
+
+
+.roadmap-tran{
+
+  display: block;
+  animation-name: stepper ;
+  animation-duration: 4s ;
+  animation-iteration-count: 1;
+}
+.opacyti-animat{
+
+  display: none;
+
+}
+@keyframes stepper {
+  
+from{
+  opacity: 0;
+}to{
+  opacity: 1;
+}
+
+}
+
+@media screen and (max-width: 739px) {
+  .scroll-table {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rotate-year{
+    rotate: 0deg;
+  
+  }
+}
+
+
